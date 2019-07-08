@@ -1,11 +1,22 @@
 //app.js
+var data=require("/pages/data/data.js");
+// var index = require('/pages/data/data_index.js');
+// var index_next = require('/pages/data/data_index_next.js');
+// var discovery = require('/pages/data/data_discovery.js');
+// var discovery_next = require('/pages/data/data_discovery_next.js');
 App({
   onLaunch: function () {
+    
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    var res = wx.getStorageSync("medical");
+    if (res) {
+      return res
+    } else {
+      wx.setStorageSync("medical", data.medical)
+    }
     // 登录
     wx.login({
       success: res => {

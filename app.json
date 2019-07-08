@@ -1,27 +1,62 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/information/information",
     "pages/help/help",
     "pages/community/community",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/community/consultation/consultation",
+    "pages/community/assistance/assistance",
+    "pages/index/detail/detail",
+    "pages/index/comment/comment",
+    "pages/community/dynamic/dynamic",
+    "pages/community/question/answer/answer",
+    "pages/community/question/question",
+    "pages/community/chat/chat",
+    "pages/community/writeanswer/writeanswer",
+    "pages/community/assistance/layer/layer",
+    "pages/community/assistance/layer/Consultation/Consultation",
+    "pages/mine/setting/setting",
+    "pages/mine/setting/fontSize/fontSize",
+    "pages/mine/setting/grade/grade",
+    "pages/mine/setting/aboutUs/aboutUs",
+    "pages/mine/medicareCard/medicareCard",
+    "pages/mine/joinMedic/joinMedic",
+    "pages/mine/collect/collect",
+    "pages/mine/mygold/mygold",
+    "pages/mine/myNews/myNews",
+    "pages/mine/exchange/exchange",
+    "pages/mine/share/share",
+    "pages/mine/comment/comment",
+    "pages/mine/attention/attention",
+    "pages/mine/browse/browse",
+    "pages/mine/survey/survey",
+    "pages/mine/mygold/withdraw/withdraw",
+    "pages/help/realTime/realTime",
+    "pages/help/placeFind/placeFind",
+    "pages/help/hospitalize/hospitalize",
+    "pages/help/hospitalize/guidance/guidance",
+    "pages/help/hospitalize/differentPlace/differentPlace",
+    "pages/help/hospitalize/differentPlace/online/online"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "医保一点通",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
   },
   "tabBar": {
     "backgroundColor": "#ffffff",
     "color": "#999999",
-    "selectedColor": "#cc1004",
+    "selectedColor": "#4F8F8B",
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "咨询",
+        "text": "资讯",
         "iconPath": "pages/images/8.png",
         "selectedIconPath": "pages/images/4.png"
       },
@@ -44,5 +79,11 @@
         "selectedIconPath": "pages/images/2.png"
       }
     ]
-  }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请点击确定"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
 }
